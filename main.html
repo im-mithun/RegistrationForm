@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="heading">Registration Form</div>
+
+    <div class="form-details">
+      <form>
+        <label for="nameInput" class="">
+          Name <br />
+          <input type="text" class="input" id="name" />
+        </label>
+        <br />
+        <label for="dobInput"
+          >Date of Birth <br />
+          <input type="date" class="input" id="dob" />
+        </label>
+        <br />
+        <label for="emailInput">
+          Email ID <br />
+          <input type="email" class="input" id="email" />
+        </label>
+        <br />
+        <label for="ContactNumber">
+          ContactNumber <br />
+          <input type="number" class="input" id="number" />
+        </label>
+        <br />
+
+        <label for="q1"
+          >Residential Address <br />
+          <textarea
+            name="ans1"
+            id="curKnowledge"
+            cols="25"
+            rows="5"
+            class="input"
+          ></textarea>
+        </label>
+        <br />
+
+        <label for="q2"
+          >What are your hobbies and acheivements? <br />
+          <textarea
+            name="ans2"
+            id="aim"
+            cols="35"
+            rows="5"
+            class="input"
+          ></textarea>
+        </label>
+        <br />
+
+        <label for="q3"
+          >Describe yourself. <br />
+          <textarea
+            name="ans3"
+            id="dreamProject"
+            cols="35"
+            rows="5"
+            class="input"
+          ></textarea>
+        </label>
+        <br />
+        <label for="q4"
+          >What is your gender?<br />
+          <input type="radio" name="gender" value="male" required /> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required /> Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="others" required /> Others
+        </label>
+        <br />
+        <label for="q5">
+          What is your current education qualification?<br />
+          <input type="checkbox" name="qualification[]" value="School" />
+          School
+        </label>
+        <label>
+          <input type="checkbox" name="qualification[]" value="Bachelors" />
+          Bachelors
+        </label>
+        <label>
+          <input type="checkbox" name="qualification[]" value="Working" />
+          Working
+        </label>
+        <br />
+        <label for="q6"
+          >Can you arrange your own transportation for commute?<br />
+
+        <select
+          name="Can you arrange your own transportation for commute?"
+          required
+        >
+          <option value="">Select your mode</option>
+          <option value="yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <br />
+
+        <button type="submit" class="button">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
